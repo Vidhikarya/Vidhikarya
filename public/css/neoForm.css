@@ -1,0 +1,405 @@
+/*
+*
+*Component ID - 1
+*Author : Santanu Bera
+*Component Name - Multi Select Box | Tag Box
+*URI : Vidhikarya.com
+*Version : 1.0
+*Licence: GPL
+*
+*/
+/* Universal Style*/
+.neoFormLabel{
+  font-size: 18px;
+  color:#2196f3;
+}
+.neoFormInput{
+  border:0;
+  border-bottom:1px solid #9e9e9e;
+  outline: none;
+  width: 100%;
+}
+.neoFormInput:hover{
+  border-bottom: 1px solid #00bcd4;
+}
+/*Label Style -----------------*/
+.neoMultiSelectLabel{
+  font-size: 18px;
+  font:color:black;
+}
+/* Tag Style ---------------------------------------*/
+.neoMultiSelectTags {
+  list-style: none;
+  margin: 0;
+  overflow: hidden; 
+  padding: 0;
+}
+.neoMultiSelectTags li {
+  float: left; 
+  position: relative;
+}
+.neoMultiSelectdeleteIcon{ 
+  font-size:16px;
+  cursor: pointer;
+  background: transparent;
+  color: #fff;
+  height: 26px;
+  line-height: 26px;
+  position: relative;
+  padding-right:5px;
+  margin-right: 5px;
+  transition: color 0.3s;
+  -webkit-transition: color 0.3s;
+  border-right: 1px solid #fff;
+}
+.neoMultiSelectTag{
+  background: #795548;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
+  position: relative;
+  margin: 0 10px 10px 0px;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+  transition: all 0.5s;
+}
+.neoMultiSelectTag:hover{
+  background-color: crimson;
+}
+
+
+/* Multiple Select Menu List ------------------------------------*/
+.SelectMenuListStyle span{
+	font-size: 16px;
+    color: #26a69a;
+    display: block;
+    line-height: 22px;
+    padding: 14px 16px;
+}    
+.SelectMenuListStyle{
+    color: rgba(0, 0, 0, 0.87);
+    cursor: pointer;
+    min-height: 50px;
+    line-height: 1.5rem;
+    width: 100%;
+    text-align: left;
+    transition: all 0.5s ease-in-out;
+}
+.SelectMenuListStyle:hover{
+  
+}
+.neoMultiSelectMenu{
+	list-style: none;
+	padding: 0px;
+	margin:0px;
+}
+.neoMultiSelectBoxArea{
+	outline:0px;
+	border:0px;
+	width: 100%;
+	border-bottom:1px solid #9e9e9e;
+	font-size: 20px;
+  padding-bottom: 15px;
+  cursor: pointer;
+}
+.neoMultiSelectBoxArea:hover{
+  border-bottom: 1px solid #00bcd4;
+}
+.neoMultiSelectDropDown {
+    position: relative;
+}
+.neoMultiSelectDropDownContent {
+	  display: none;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    background-color: #fff;
+    overflow-y: auto;
+    max-height: 400px;
+    display: none;
+    transform: scale(0);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    z-index: 1000;
+}
+
+/* Material Design Pure CSS Check Box*/
+.neoMultiSelectCheckboxLabel {
+  position: relative;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+}
+.neoMultiSelectCheckBox {
+  position: relative;
+  margin: 0 1.5rem 0 0;
+  cursor: pointer;
+  background: red;
+  outline: 0px;
+}
+.neoMultiSelectCheckBox:before {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  content: "";
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 1rem;
+  height: 1rem;
+  border:2px solid #5a5a5a;
+}
+.neoMultiSelectCheckBox:checked:before {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  height: .5rem;
+  border-color: #009688;
+  border-top-style: none;
+  border-right-style: none;
+  background-color: transparent;
+}
+.neoMultiSelectCheckBox:after {
+  content: "";
+  position: absolute;
+  top: -0.125rem;
+  left: 0;
+  width: 1.1rem;
+  height: 1.1rem;
+  background: #fff;
+  cursor: pointer;
+}
+
+@-webkit-keyframes slideUp {
+  0% {
+    -webkit-transform: translateY(6.25rem);
+    transform: translateY(6.25rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes slideUp {
+  0% {
+    -webkit-transform: translateY(6.25rem);
+    transform: translateY(6.25rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+/*
+*
+*Component ID - 2
+*Author : Santanu Bera
+*Component Name - Select Box
+*URI : Vidhikarya.com
+*Version : 1.0
+*Licence: GPL
+*
+*/
+
+.neoSelectBoxMenu {
+  list-style: none;
+  padding: 0px;
+  margin:0px;
+  width: 100%;
+  height: 30px;
+  font-size: 18px;
+  border-bottom:1px solid #9e9e9e;
+  transition: all 0.5s ease-in-out;
+}
+.neoSelectBoxMenu:hover{
+  border-bottom: 1px solid #00bcd4;
+}
+.neoSelectBoxMenu > li {
+  display: inline-block;
+  cursor: pointer;
+  width:100%;
+  position: relative;
+}
+.neoSelectDropMenuContainer{
+  background-color:#fff;
+  width: 100%;
+  position: absolute;
+  left:0;
+  top:30px;
+  overflow-y: auto;
+  max-height: 400px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+  padding:0px;
+  margin:0px;
+  width: 100%;
+  opacity: 1;
+  display: none;
+  transform: scale(0);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  z-index: 1000;
+}
+.neoSelectDropMenuContainer ul{
+  margin:0px;
+  padding:0px;
+}
+.neoSelectBoxMenuItem ul li{
+  display: block;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+  white-space: pre;
+  box-sizing: border-box;
+}
+.neoSelectBoxMenuItem ul li:hover {
+  background: #ebebeb;
+}
+.SelectedItem{
+  background:#3498DB;
+}
+
+
+
+
+
+.neoTextBoxLabel{
+  font-size: 18px;
+}
+.neoTextBoxStyle{
+  width: 100%;
+  outline: 0px;
+  border:0px;
+  border-bottom:1px solid #9e9e9e;
+}
+.neoTextBoxStyle:hover{
+  border-bottom: 1px solid #00bcd4;
+}
+.neoPasswordBoxStyle{
+  width: 100%;
+  outline: 0px;
+  font-size: 18px;
+}
+
+
+.neoTextAreaStyle{
+  width:100%;
+  border:0px;
+  border-bottom:1px solid #9e9e9e;
+  outline: 0px;
+  margin-bottom:0px;
+  padding-bottom: 0px;
+}
+.neoTextBoxStyle:hover{
+  border-bottom: 1px solid #00bcd4;
+}
+.neoTextAreaDataCounterLabel, .neoTextBoxDataCounterLabel{
+  position: absolute;
+  right: 20px;
+}
+
+.InvalidCounter-Control{
+  border-bottom: 1px solid tomato;
+}
+.InvalidCounter-Label{
+  color:tomato;
+}
+.InvalidCounter-CounterLabel{
+  color:tomato;
+}
+
+
+
+/*Neo Check Box --------------- */
+/* basic css */
+input[type=checkbox]   { display:none; }
+.check-awesome         { position:relative; }
+.neoCheckBoxTitle{
+  font-size: 20px;
+  font-style: normal;
+  position: relative;
+  bottom: 5px;
+}
+.neoCheckBoxDescription{
+
+}
+/* checkbox css */
+label { 
+  cursor:pointer;
+  margin-bottom: 0px;
+}
+label span { 
+  display:block; 
+  position:absolute; 
+  left:0; 
+  -webkit-transition-duration:0.3s; 
+  -moz-transition-duration:0.3s; 
+  transition-duration:0.3s;
+}
+label .circle          {
+  background:#4caf50;
+  opacity: .5;
+  left:-30px;
+  top:-30px;
+  height:80px;
+  width:80px;
+  z-index:-1;
+  border-radius:50%; 
+  -moz-border-radius:50%; 
+  -webkit-border-radius:50%;
+  transform: scale(0);
+}
+label .box     {
+  border:2px solid #000;
+  height:20px; 
+  width:20px;
+  z-index:888;
+  -webkit-transition-delay:0.2s; 
+  -moz-transition-delay:0.2s; 
+  transition-delay:0.2s;
+}
+label .check         {
+  top: -7px;
+  left: 6px;
+  width: 12px;
+  height: 24px;
+  border:2px solid #0f9d58;  
+  border-top: none;
+  border-left: none;
+  opacity:0; 
+  z-index:888;
+  -webkit-transform:rotate(180deg); 
+  -moz-transform:rotate(180deg); 
+  transform:rotate(180deg);
+  -webkit-transition-delay:0.3s; 
+  -moz-transition-delay:0.3s; 
+  transition-delay:0.3s;
+}
+
+/* handling click events */
+
+/* when checkbox is checked */
+label .circle {
+  -webkit-animation   :growCircle 0.3s ease;
+  -moz-animation      :growCircle 0.3s ease;
+  animation           :growCircle 0.3s ease;
+}
+input[type=checkbox]:checked ~ label .box { 
+  opacity:0;
+  -webkit-transform   :scale(0) rotate(-180deg);
+  -moz-transform    :scale(0) rotate(-180deg);
+  transform         :scale(0) rotate(-180deg);
+}
+input[type=checkbox]:checked ~ label .check {
+  opacity:1; 
+  -webkit-transform   :scale(1) rotate(45deg);
+  -moz-transform      :scale(1) rotate(45deg);
+  transform           :scale(1) rotate(45deg);
+}

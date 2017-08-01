@@ -1,0 +1,122 @@
+#PageContent{
+	background: #e9ebee;
+}
+.OpenCaseCardStyle{
+	margin-bottom: 20px;
+}
+/*Nav Bar*/
+.Counter{
+	color:#444d56;
+    display: inline-block; 
+    padding: 2px 5px;
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    color: #586069;
+    background-color: rgba(27,31,35,0.08);
+    border-radius: 20px;
+}
+.DashboardSearchBox{
+	max-height: 30px;
+    box-shadow: none;
+    padding: 3px 5px;
+    font-size: 14px;
+    color: #24292e;
+    background-color: #f6f8fa;
+    border: 1px solid #d1d5da;
+    border-radius: 0px;
+    outline: none;    
+}
+/* Card Style*/
+.CaseCard{
+	border: 1px solid;
+	flex-basis: 400px;
+	flex-grow: 1;
+    border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+    border-radius: 0 0 4px 4px;
+    /*pointer-events: none;*/
+    background-color: #fff;
+    margin:5px;
+    margin-bottom: 10px;
+}
+.CaseCardHeading{
+	padding:15px;
+	padding-left: 10px;
+	width:100%;
+	border-bottom: 1px solid #d0d1d5;
+	text-transform: none;
+	-webkit-font-smoothing:antialiased;
+	line-height: 13px;
+}
+.Category{
+	color:#90949c;
+	font-weight: bold;
+	font-size: 17px;
+}
+.CreatedOn{
+	padding-left: 15px;
+	font-size: 13px;
+}
+.CaseCardContent{
+	padding:10px;
+	clear: both;
+}
+/* End Of Card Style*/
+.DashboardSearchBox:focus{
+	background-color: #fff;
+}
+#OpenCases{
+	display: flex;
+	margin:auto;
+	padding-top: 5px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.DashboardNav{
+	padding: 10px;
+	padding-bottom: 0px;
+	border-bottom: 1px solid #e1e4e8 ;
+    width: 100%;
+    background-color: #fff;
+}
+.DashboardNavBar{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Tabs{
+	align-content: flex-start;
+	flex: 3;
+}
+.SearchBox{
+	 flex: 1;
+	 display: flex;
+	 justify-content: flex-end;
+	 align-content: center;
+}
+.reponav-item{
+	float: left;
+    padding: 7px 15px 8px;
+    color: #586069;
+    white-space: nowrap;
+    border: solid transparent;
+    border-width: 3px 1px 1px;
+    border-radius: 3px 3px 0 0;
+}
+.selected{
+	color: #24292e;
+    background-color: #e9ebee !important;
+    border-color: #e36209 #e1e4e8 transparent;
+}
+.OptionTitle{
+	font-weight: bold;
+	font-size: 13px;
+	color: #90949c;
+}
+.OptionValue{
+	font-size: 13px;
+	padding-left: 10px;
+}
+.CardFooter{
+	float:right;
+}
